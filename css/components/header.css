@@ -19,3 +19,9 @@ header {
   header .blocco_dx {
     float: right;
     width: 200px; }
+
+.subheader {
+  background-color: #2E3D51;
+  color: #fff;
+  height: 50px;
+  width: 100%; }
