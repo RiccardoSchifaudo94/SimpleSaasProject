@@ -1,0 +1,29 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.slider{
+	width:$full;
+	height:$height*4;
+	background-color:$light_gray;
+	opacity:0.5;
+	.nav-slider{
+		width:$full;
+		height:$height/2;
+		position:$relative;
+		top:$height*2;
+	}
+	.nav-prev,.nav-next{
+		text-align:center;
+	},
+	.nav-prev{
+		float:$left;
+	},
+	.nav-next{
+		float:$right;
+	}
+	i{
+		width:$width/4;
+		height:$height/2;
+		background-color:$light_green;
+	}
+}

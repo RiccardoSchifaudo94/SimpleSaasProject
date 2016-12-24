@@ -1,0 +1,23 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+header{
+	width:$full;
+	height:$height_third;
+	background-color:$dark_blue;
+	position:$static;
+	
+	@include fontLato($font_size_tiny,$font_thin,$light_gray);
+	i{
+		margin:10px 20px;
+	}
+	span{
+		@include fontLato($font_size_tiny,$font_thin,$light_green);
+	}
+	.blocco_sx{
+		float:$left;
+	}
+	.blocco_dx{
+		float:$right;
+		width:$width;
+	}
+}

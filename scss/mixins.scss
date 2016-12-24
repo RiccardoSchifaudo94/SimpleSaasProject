@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+@mixin fontLato($font_size,$font_weight,$color){
+	font-size:$font_size;
+	font-weight:$font_weight;
+	color:$color;
+	font-family:"Lato",sans-serif;
+}
+

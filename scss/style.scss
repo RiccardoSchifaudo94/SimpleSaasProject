@@ -1,0 +1,11 @@
+@import "variables.scss";
+@import "mixins.scss";
+*{
+	padding:$zero;
+	margin:$zero;
+}
+.container{
+	width:$full;
+	max-width:$width_container;
+	margin:0 auto;
+}

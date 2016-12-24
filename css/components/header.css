@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  height: 33.33333px;
+  background-color: #2E3D51;
+  position: static;
+  font-size: 12px;
+  font-weight: 100;
+  color: #dedede;
+  font-family: "Lato",sans-serif; }
+  header i {
+    margin: 10px 20px; }
+  header span {
+    font-size: 12px;
+    font-weight: 100;
+    color: #20D1AF;
+    font-family: "Lato",sans-serif; }
+  header .blocco_sx {
+    float: left; }
+  header .blocco_dx {
+    float: right;
+    width: 200px; }
