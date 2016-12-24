@@ -23,8 +23,12 @@ header{
 }
 
 .subheader{
-	background-color:$dark_blue;
-	color:$white;
+	background-color:$white;
 	height:$height/2;
 	width:$full;
+	@include fontLato($font_size_medium,$font_bold,$dark_blue);
+	text-transform:uppercase;
+	span{
+		color:$light_green;
+	}
 }

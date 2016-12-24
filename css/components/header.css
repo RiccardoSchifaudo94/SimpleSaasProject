@@ -21,7 +21,13 @@ header {
     width: 200px; }
 
 .subheader {
-  background-color: #2E3D51;
-  color: #fff;
+  background-color: #fff;
   height: 50px;
-  width: 100%; }
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2E3D51;
+  font-family: "Lato",sans-serif;
+  text-transform: uppercase; }
+  .subheader span {
+    color: #20D1AF; }
