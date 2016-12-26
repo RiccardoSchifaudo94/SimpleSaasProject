@@ -3,14 +3,22 @@
 
 .slider{
 	width:$full;
-	height:$height*4;
-	background-color:$light_gray;
-	opacity:0.5;
+	height:$height*5;
+	background-color:$dark_blue;
+	background-size:$full;
+	background-position:center top;
+	background-repeat:no-repeat;
+	opacity:0.8;
 	.nav-slider{
 		width:$full;
 		height:$height/2;
 		position:$relative;
-		top:$height*2;
+		top:$height*2.2;
+		text-align:center;
+		h3{
+		   @include fontLato($font_size_big,$font_bold,$white);
+		}
+		
 	}
 	.nav-prev,.nav-next{
 		text-align:center;
@@ -24,6 +32,12 @@
 	i{
 		width:$width/4;
 		height:$height/2;
-		background-color:$light_green;
+		background-color:$light_gray;
+		color:$white;
+		opacity:0.7;
+		&:hover{
+			background-color:$light_green;
+			opacity:1;
+		}
 	}
 }
