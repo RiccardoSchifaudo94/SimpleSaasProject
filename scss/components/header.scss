@@ -27,7 +27,7 @@ header{
 	background-color:$white;
 	height:$height/2;
 	width:$full;
-	padding:15px 20px 0px;
+	padding:15px 0px 0px;
 	@include fontLato($font_size_medium,$font_bold,$dark_blue);
 	text-transform:uppercase;
 	span{
@@ -37,9 +37,11 @@ header{
 }
 .subheader .blocco_sx{
 		float:$left;
+		padding-left:20px;
 	}
 .subheader .blocco_dx{
 		float:$right;
+		padding-right:20px;
 		.search{
 			width:$width/8;
 			height:$height/4;
@@ -52,6 +54,10 @@ header{
 				top: -7px;
     			left: 7px;
 			}
+			&:hover{
+    				color:$light_green;
+    				border-color:$light_green;
+    		}
 		}
 	}
 

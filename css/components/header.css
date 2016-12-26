@@ -25,7 +25,7 @@ header {
   background-color: #fff;
   height: 50px;
   width: 100%;
-  padding: 15px 20px 0px;
+  padding: 15px 0px 0px;
   font-size: 24px;
   font-weight: 600;
   color: #2E3D51;
@@ -35,10 +35,12 @@ header {
     color: #20D1AF; }
 
 .subheader .blocco_sx {
-  float: left; }
+  float: left;
+  padding-left: 20px; }
 
 .subheader .blocco_dx {
-  float: right; }
+  float: right;
+  padding-right: 20px; }
   .subheader .blocco_dx .search {
     width: 25px;
     height: 25px;
@@ -50,6 +52,9 @@ header {
       font-size: 12px;
       top: -7px;
       left: 7px; }
+    .subheader .blocco_dx .search:hover {
+      color: #20D1AF;
+      border-color: #20D1AF; }
 
 .subheader ul {
   list-style-type: none;
