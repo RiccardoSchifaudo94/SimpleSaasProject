@@ -26,9 +26,35 @@ header{
 	background-color:$white;
 	height:$height/2;
 	width:$full;
+	padding:15px 20px 0px;
 	@include fontLato($font_size_medium,$font_bold,$dark_blue);
 	text-transform:uppercase;
 	span{
 		color:$light_green;
+	},
+	.blocco_sx{
+		float:$left;
+	},
+	.blocco_dx{
+		float:$right;
+		.search{
+			width:$width/6;
+			height:$height/3;
+			border:2px solid $dark_blue;
+			border-radius:$full/2;
+			float:$right;
+		}
+	},
+	ul {
+		list-style-type:none;
+		li{
+			float: left;
+			@include fontLato($font_size_tiny,$font_bold,$dark_blue);
+			padding:10px 20px 0px 0px;
+			&:hover{
+				color:$light_green!important;
+			}
+		}
 	}
+	
 }
