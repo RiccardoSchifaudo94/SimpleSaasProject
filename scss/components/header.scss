@@ -73,3 +73,10 @@ header{
 			}
 		}
 	}
+
+@media screen and (max-width:768px){
+	header .blocco_dx{
+		float:none;
+		text-align:center;
+	}
+}

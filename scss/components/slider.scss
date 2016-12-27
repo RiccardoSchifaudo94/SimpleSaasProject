@@ -53,9 +53,7 @@
 .nav-banner-text p{
 	@include fontLato($font_size_medium,$font_thin,$white);
 }
-.nav-button button{
-	@include fontLato($font_size_tiny,$font_thin,$white);
-}
+
 .btn_green{
 	background-color:$light_green;
 	@extend .btn;
