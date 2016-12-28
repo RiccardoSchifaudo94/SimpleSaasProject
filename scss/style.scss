@@ -63,6 +63,50 @@ button{
 	height:30px!important;
 }
 
+.section_travel_package h3,.section_travel_package p{
+	text-align:center;
+}
+.section_travel_package h3{
+	margin-top:30px;
+	@include fontLato($font_size_medium,$font_extra_bold,$dark_blue);
+	text-transform:uppercase;
+}
+.section_travel_package p{
+	@include fontLato($font_size_tiny,$font_thin,$dark_blue);
+	margin-bottom:60px; 
+}
+.section_travel_package{
+	text-align:center;
+}
+.travel_post{
+	width:20%;
+	min-height:$height*2;
+	background-color:$light_gray;
+	float:$left;
+	margin:20px 20px 20px 0px;
+	b,p{float:$left;text-align:$left;}
+	b{
+		margin:5px 0px 5px 10px;
+		@include fontLato($font_size_small,$font_regular,$dark);
+	},
+	p{
+		margin:0px 0px 5px 10px;
+		@include fontLato($font_size_tiny,$font_thin,$dark);
+	}
+}
+.travel_img{
+	width:100%;
+	height:$height+50px;
+	background-size:cover;
+
+}
+@for $i from 1 through 4 {
+	#img-#{$i} {
+        background-image:url("../img/"+$i+".jpg");
+    }
+}
+
+
 @media screen and (max-width:768px){
   .search_field{
   	float:left;
