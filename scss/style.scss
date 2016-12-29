@@ -5,7 +5,7 @@
 	margin:$zero;
 }
 .clear{
-	clear::both;
+	clear:both;
 }
 .container{
 	width:$full;
@@ -88,7 +88,7 @@ button{
 	b{
 		margin:5px 0px 5px 10px;
 		@include fontLato($font_size_small,$font_regular,$dark);
-	},
+	}
 	p{
 		margin:0px 0px 5px 10px;
 		@include fontLato($font_size_tiny,$font_thin,$dark);
@@ -106,6 +106,52 @@ button{
     }
 }
 
+.section_background{
+	width:$full;
+	height:$height*4;
+	background-color:$dark_blue;
+	opacity:0.8;
+	margin-top:100px;
+	background-image:url("../img/dubai.jpg");
+	background-size:cover;
+	background-position:bottom center;
+	background-repeat:no-repeat;
+	padding-top:100px;
+}
+.section_pack{
+	width:$width/2;
+	text-align:center;
+	float:$left;
+	margin-left:20px;
+	span{
+		@include fontLato($font_size_small,$font_regular,$light_gray);
+	}
+	&:hover{
+		color:$light_green;
+		i{
+			color:$light_green;
+		}
+		.circle{
+			border:2px solid $light_green;
+		}
+		span{
+			color:$light_green!important;
+		}
+	}
+}
+.circle{
+	border:2px solid $light_gray;
+	width:$width/3;
+	height:$height/1.5;
+	border-radius:$full/2;
+	margin:0 auto;
+	i{
+		color:$light_gray;
+		position:$relative;
+		top:15px;
+		font-size:$font_size_big;
+	}
+}
 
 @media screen and (max-width:768px){
   .search_field{

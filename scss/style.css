@@ -121,60 +121,23 @@ button {
   background-size: cover; }
 
 #img-1 {
-  background-image: url("../img/1.jpg"); }
+  background-image: url("../img/1.jpg");
+  border: 2px solid red; }
 
 #img-2 {
-  background-image: url("../img/2.jpg"); }
+  background-image: url("../img/2.jpg");
+  border: 2px solid red; }
 
 #img-3 {
-  background-image: url("../img/3.jpg"); }
+  background-image: url("../img/3.jpg");
+  border: 2px solid red; }
 
 #img-4 {
-  background-image: url("../img/4.jpg"); }
-
-.section_background {
-  width: 100%;
-  height: 400px;
-  background-color: #2E3D51;
-  opacity: 0.8;
-  margin-top: 100px;
-  background-image: url("../img/dubai.jpg");
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  padding-top: 100px; }
-
-.section_pack {
-  width: 100px;
-  text-align: center;
-  float: left;
-  margin-left: 20px; }
-  .section_pack span {
-    font-size: 18px;
-    font-weight: 400;
-    color: #c1c1c1;
-    font-family: "Lato",sans-serif; }
-  .section_pack:hover {
-    color: #20D1AF; }
-    .section_pack:hover i {
-      color: #20D1AF; }
-    .section_pack:hover .circle {
-      border: 2px solid #20D1AF; }
-    .section_pack:hover span {
-      color: #20D1AF !important; }
-
-.circle {
-  border: 2px solid #c1c1c1;
-  width: 66.66667px;
-  height: 66.66667px;
-  border-radius: 50%;
-  margin: 0 auto; }
-  .circle i {
-    color: #c1c1c1;
-    position: relative;
-    top: 15px;
-    font-size: 36px; }
+  background-image: url("../img/4.jpg");
+  border: 2px solid red; }
 
 @media screen and (max-width: 768px) {
   .search_field {
     float: left; } }
+
+/*# sourceMappingURL=style.css.map */
