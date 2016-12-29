@@ -160,7 +160,7 @@ button {
       color: #20D1AF; }
     .section_pack:hover .circle {
       border: 2px solid #20D1AF; }
-    .section_pack:hover span {
+    .section_pack:hover .section_pack span {
       color: #20D1AF !important; }
 
 .circle {
