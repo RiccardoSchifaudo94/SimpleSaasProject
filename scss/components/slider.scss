@@ -12,7 +12,7 @@
 }
 .slider{
 	width:$full;
-	height:$height*5;
+	height:($height*5)+30px;
 	background-color:$dark_blue;
 	background-size:cover;
 	background-position:center top;

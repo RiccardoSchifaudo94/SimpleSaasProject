@@ -21,9 +21,18 @@ header {
     float: right;
     width: 210px; }
 
+.item_nav {
+  width: 185px; }
+
+.item_nav p, .item_nav i {
+  float: left; }
+
+.item_nav p {
+  margin: 5px auto 0px; }
+
 .subheader {
   background-color: #fff;
-  height: 50px;
+  height: 65px;
   width: 100%;
   padding: 15px 0px 0px;
   font-size: 24px;
@@ -50,8 +59,8 @@ header {
     .subheader .blocco_dx .search i {
       position: relative;
       font-size: 12px;
-      top: -7px;
-      left: 7px; }
+      top: -12px;
+      left: 5px; }
     .subheader .blocco_dx .search:hover {
       color: #20D1AF;
       border-color: #20D1AF; }

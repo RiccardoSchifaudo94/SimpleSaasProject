@@ -6,27 +6,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!--- personal css stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/components/header.css">
 	<link rel="stylesheet" type="text/css" href="css/components/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/components/slider.css">
 	<link rel="stylesheet" type="text/css" href="css/components/sidebars.css">
+	<!--- plugins css stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/plugins/bootstrap_datepicker/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/owl_carousel/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/owl_carousel/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/owl_carousel/owl.transitions.css">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="blocco_sx">
-				<i class="fa fa-user"></i>Admin Login
-				<i class="fa fa-user"></i>Documentation Login
-				<i class="fa fa-file-o"></i>Not a member? <span>Register</span>
-			</div>
-			<div class="blocco_dx">
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-tumblr"></i>
-				<i class="fa fa-pinterest"></i>
-			</div>
-		</div>	
+			<div class="row">
+				<div class="col-md-9 col-sm-9 col-xs-12">
+					<div class="blocco_sx">
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<div class="item_nav">
+									<i class="fa fa-user"></i><p>Admin Login</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-12">	
+								<div class="item_nav">
+									<i class="fa fa-user"></i><p>Documentation Login</p>
+								</div>
+							</div>	
+							<div class="col-md-6 col-sm-6 col-xs-12">	
+								<div class="item_nav">
+									<i class="fa fa-file-o"></i><p>Not a member? <span>Register</span></p>
+								</div>
+							</div>	
+						</div>	<!-- /.inner row-->	
+					</div><!-- /.blocco_sx-->
+				 </div><!-- /.col-md-6 col-sm-6 col-xs-12-->
+				 <div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="blocco_dx">
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-tumblr"></i>
+						<i class="fa fa-pinterest"></i>
+					</div><!-- /.blocco_dx-->
+				 </div><!-- /.col-md-6 col-sm-6 col-xs-12-->
+		   </div><!-- /.row-->		
+		</div><!-- /.container-->		
 	</header>
 	<div class="subheader">
 		<div class="container">
@@ -50,9 +83,9 @@
 		<div class="nav-slider">
 			<div class="nav-prev"><i class="fa fa-angle-left  fa-3x"></i></div>
 			<div class="nav-next"><i class="fa fa-angle-right fa-3x"></i></div>
-			<div class="nav-banner-text">
-				<h3>TO TRAVEL IS TO LIVE</h3>
-				<p>You Don't Need Magic to Desappear, All you need is a destination.</p>
+			<div class="nav-banner-text" id="presentazione_sito">
+				<h3>{{title_presentation}}</h3>
+				<p>{{descr_presentation}}</p>
 			</div>
 			<div class="nav-button">
 				<button class="btn_green">Show on the map</button>
@@ -63,100 +96,142 @@
 	<div class="clear"></div>
 	<div class="search_bar">
 		<div class="container">
-			<div class="blocco_sx">
-				<p>find your</p>
-				<span>Holidays</span>
-			</div>
-			<div class="blocco_dx">
-				<div class="search_field">
-					<label>Where</label>
-					<input type="text" plachholder="where">
-					<i class="fa fa-globe"></i>
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-12">	
+					<div class="blocco_sx">
+						<p>find your</p>
+						<span>Holidays</span>
+					</div>
 				</div>
-				<div class="search_field">
-					<label>When</label>
-					<input type="date" plachholder="date">
-					<i class="fa fa-calendar"></i>
+				<div class="col-md-10 col-sm-10 col-xs-12">
+					<div class="blocco_dx">
+						<div class="row">
+							<div class="col-md-5 col-sm-5 col-xs-12">
+								<div class="search_field">
+									<label>Where</label>
+									<input type="text" plachholder="where">
+									<i class="fa fa-globe"></i>
+								</div>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-12">	
+								<div class="search_field">
+									<label>When</label>
+									<input plachholder="date" class="datepicker">
+									<i class="fa fa-calendar"></i>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-12">		
+								<button class="btn_green" id="correct_btn">Search</button>
+							</div>		
+						</div>		
+					</div>
 				</div>	
-				<button class="btn_green" id="correct_btn">Search</button>	
-			</div>
-		</div>	
+		    </div>	
+	  </div>	
 	</div>
 	<div class="section_travel_package">
 	  <div class="container">
 		<h3>Special OFFERS</h3>
 		<p>Special 2016 packages where people love to stay*.</p>
-			<div class="travel_post">
-				<div class="travel_img" id="img-1"></div>
-				<div class="travel_desc">
-					<b>Auckland</b>
-					<p>Come there and discover the city</p>
-				</div>
-			</div>
-			<div class="travel_post">
-				<div class="travel_img" id="img-2"></div>
-				<div class="travel_desc">
-					<b>London</b>
-					<p>Come there and discover the city</p>
-				</div>
-			</div>
-			<div class="travel_post">
-				<div class="travel_img" id="img-3"></div>
-				<div class="travel_desc">
-					<b>Tokyo</b>
-					<p>Come there and discover the city</p>
-				</div>
-			</div>
-			<div class="travel_post">
-				<div class="travel_img" id="img-4"></div>
-				<div class="travel_desc">
-					<b>Rome</b>
-					<p>Come there and discover the city</p>
+		
+			<div class="owl-carousel" id="travel_gallery">
+			    <div class="travel_post" v-for="slide in slides">
+					<div class="travel_img" style="background-image:url({{slide.path_img}})"></div>
+					<div class="travel_desc">
+						<b>{{slide.titolo_luogo}}</b>
+						<p>{{slide.descrizione_luogo}}</p>
+					</div>
 				</div>
 			</div>	
-		</div>	
+		
+		</div><!-- chiudi container -->
 	</div>
 	<div class="clear"></div>
 	<div class="section_background">
 		<div class="container">
-			<div class="section_pack">
-				<div class="circle">
-					<i class="fa fa-ship"></i>
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-12">
+					<div class="section_pack">
+						<div class="circle">
+							<i class="fa fa-ship"></i>
+						</div>
+						<span>Cruise</span>
+					</div>
+				</div>	
+				<div class="col-md-2 col-sm-2 col-xs-12">	
+					<div class="section_pack">
+						<div class="circle">
+							<i class="fa fa-building"></i>
+						</div>
+						<span>City breaks</span>
+					</div>	
 				</div>
-				<span>Cruise</span>
-			</div>	
-			<div class="section_pack">
-				<div class="circle">
-					<i class="fa fa-building"></i>
+				<div class="col-md-2 col-sm-2 col-xs-12">	
+					<div class="section_pack">
+						<div class="circle">
+							<i class="fa fa-heart"></i>
+						</div>
+						<span>Honeymoon</span>
+					</div>
 				</div>
-				<span>City breaks</span>
-			</div>	
-			<div class="section_pack">
-				<div class="circle">
-					<i class="fa fa-heart"></i>
+				<div class="col-md-2 col-sm-2 col-xs-12">	
+					<div class="section_pack">
+						<div class="circle">
+							<i class="fa fa-compass"></i>
+						</div>
+						<span>Adventure</span>
+					</div>		
 				</div>
-				<span>Honeymoon</span>
-			</div>
-			<div class="section_pack">
-				<div class="circle">
-					<i class="fa fa-compass"></i>
+				<div class="col-md-2 col-sm-2 col-xs-12">	
+					<div class="section_pack">
+						<div class="circle">
+							<i class="fa fa-safari"></i>
+						</div>
+						<span>Safari</span>
+					</div>
 				</div>
-				<span>Adventure</span>
-			</div>		
-			<div class="section_pack">
-				<div class="circle">
-					<i class="fa fa-safari"></i>
-				</div>
-				<span>Safari</span>
-			</div>
-			<div class="section_pack">
-				<div class="circle">
-					<i class="fa fa-bathtub"></i>
-				</div>
-				<span>Beach</span>
-			</div>	
-
+				<div class="col-md-2 col-sm-2 col-xs-12">	
+					<div class="section_pack">
+						<div class="circle">
+							<i class="fa fa-bathtub"></i>
+						</div>
+						<span>Beach</span>
+					</div>	
+				</div>	
+			</div><!-- /.row -->		
 		</div>	
-	</div>	
+	</div>
+	<script src="js/plugins/bootstrap_datepicker/bootstrap-datepicker.min.js"></script>
+	<script src="js/plugins/owl_carousel/owl.carousel.min.js"></script>	
+	<!-- aggiunta libreria di Vue.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.datepicker').datepicker();
+			 $('.owl-carousel').owlCarousel({
+			 	 center: true,
+			     items:4,
+			     loop:true,
+			     margin:10,
+			     responsive:{
+			     	1200:{
+			     		items:4
+			     	},
+			     	768:{
+			     		items:4
+			     	},
+			        600:{
+			            items:3
+			        },
+			        480:{
+			        	items:1
+			        }
+
+			    }
+			 });
+		});
+	</script>
+
 </body>
 </html>

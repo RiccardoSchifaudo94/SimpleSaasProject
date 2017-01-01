@@ -22,10 +22,17 @@ header{
 		width:$width+10px;
 	}
 }
+.item_nav{width:185px;}
+.item_nav p, .item_nav i{
+		float:left;
+}
+.item_nav p{
+	margin:5px auto 0px;
+}
 
 .subheader{
 	background-color:$white;
-	height:$height/2;
+	height:$height/2+15px;
 	width:$full;
 	padding:15px 0px 0px;
 	@include fontLato($font_size_medium,$font_bold,$dark_blue);
@@ -51,8 +58,8 @@ header{
 			i{
 				position:$relative;
 				font-size:$font_size_tiny;
-				top: -7px;
-    			left: 7px;
+				top: -12px;
+    			left: 5px;
 			}
 			&:hover{
     				color:$light_green;
